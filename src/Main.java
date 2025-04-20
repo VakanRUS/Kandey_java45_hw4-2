@@ -15,10 +15,10 @@ public class Main {
 
         //task 2
         System.out.println("task 2");
-        int obsrve = 1;
-        while (obsrve <= 10) {
-            System.out.printf(obsrve + " ");
-            obsrve++;
+        int i = 1;
+        while (i <= 10) {
+            System.out.printf(i + " ");
+            i++;
         }
         System.out.println();
         for (int j = 10; j > 0; j--)
@@ -30,7 +30,7 @@ public class Main {
         System.out.println("task 3");
         int population = 12_000_000;
         int year = 2025; // Текущий год
-        for (obsrve = 1; obsrve <= 10; obsrve++) {
+        for (i = 1; i <= 10; i++) {
             year++; // нас интересуют результаты в следующем году, поэтому сразу плюсуем год
             population = population + ((population * 17) / 1000) - ((population * 9) / 1000);
             System.out.println("Год " + (year) + ", численность населения составляет " + population);
@@ -39,9 +39,9 @@ public class Main {
 
         //task 4
         System.out.println("task 4");
-        toBank = 15000; // переменная объявлена в предыдущих примерах
-        totalWithPercents = toBank; // переменная объявлена в предыдущих примерах
-        month = 1; // переменная объявлена в предыдущих примерах
+        toBank = 15000; // Переменные объявлены в примерах выше
+        totalWithPercents = toBank;
+        month = 1;
         while (totalWithPercents < 12_000_000) {
             totalWithPercents += (totalWithPercents / 100) * 7;
             System.out.println("Месяц " + month + ", сумма накоплений равна " + totalWithPercents + " рублей");
@@ -51,9 +51,9 @@ public class Main {
 
         //task 5
         System.out.println("task 5");
-        toBank = 15000; // переменная объявлена в предыдущих примерах
-        totalWithPercents = toBank; // переменная объявлена в предыдущих примерах
-        month = 1; // переменная объявлена в предыдущих примерах
+        toBank = 15000; // Переменные объявлены в примерах выше
+        totalWithPercents = toBank;
+        month = 1;
         while (totalWithPercents < 12_000_000) {
             totalWithPercents += (totalWithPercents / 100) * 7;
             if (month % 6 == 0)
@@ -64,10 +64,10 @@ public class Main {
 
         //task 6
         System.out.println("task 6");
-        toBank = 15000; // переменная объявлена в предыдущих примерах
-        totalWithPercents = toBank; // переменная объявлена в предыдущих примерах
-        month = 1; // переменная объявлена в предыдущих примерах
-        year = 1; // переменная объявлена в предыдущих примерах
+        toBank = 15000; // Переменные объявлены в примерах выше
+        totalWithPercents = toBank;
+        month = 1;
+        year = 1;
         while (year <= 9) {
             totalWithPercents += (totalWithPercents / 100) * 7;
             if (month % 6 == 0)
@@ -94,10 +94,10 @@ public class Main {
         //task 8
         System.out.println("task 8");
         int period = 79;
-        year = 2025; // переменная объявлена в предыдущих примерах
-        for (obsrve = 0; obsrve < (year + 100); obsrve += period) {
-            if (obsrve > (year - 200))
-                System.out.println(obsrve);
+        year = 2025;
+        for (i = 0; i < (year + 100); i += period) {
+            if (i > (year - 200))
+                System.out.println(i);
         }
         System.out.println();
     }
