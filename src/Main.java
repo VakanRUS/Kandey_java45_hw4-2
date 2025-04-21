@@ -4,12 +4,12 @@ public class Main {
         System.out.println("task 1");
         int toBank = 15000;
         int totalWithPercents = 0;
-        int month = 1;
+        int month = 0;
         while (totalWithPercents < 2_459_000) {
-            totalWithPercents += (totalWithPercents / 100);
             totalWithPercents += toBank;
-            System.out.println("Месяц " + month + ", сумма накоплений равна " + totalWithPercents + " рублей");
+            totalWithPercents = totalWithPercents + (totalWithPercents / 100);
             month++;
+            System.out.println("Месяц " + month + ", сумма накоплений равна " + totalWithPercents + " рублей");
         }
         System.out.println();
 
@@ -21,8 +21,9 @@ public class Main {
             i++;
         }
         System.out.println();
-        for (int j = 10; j > 0; j--)
+        for (int j = 10; j > 0; j--) {
             System.out.printf(j + " ");
+        }
         System.out.println();
         System.out.println();
 
@@ -56,8 +57,9 @@ public class Main {
         month = 1;
         while (totalWithPercents < 12_000_000) {
             totalWithPercents += (totalWithPercents / 100) * 7;
-            if (month % 6 == 0)
+            if (month % 6 == 0) {
                 System.out.println("Месяц " + month + ", сумма накоплений равна " + totalWithPercents + " рублей");
+            }
             month++;
         }
         System.out.println();
@@ -70,10 +72,12 @@ public class Main {
         year = 1;
         while (year <= 9) {
             totalWithPercents += (totalWithPercents / 100) * 7;
-            if (month % 6 == 0)
+            if (month % 6 == 0) {
                 System.out.println("Месяц " + month + ", сумма накоплений равна " + totalWithPercents + " рублей");
-            if (month % 12 == 0)
+            }
+            if (month % 12 == 0) {
                 year++;
+            }
             month++;
         }
         System.out.println();
@@ -96,8 +100,9 @@ public class Main {
         int period = 79;
         year = 2025;
         for (i = 0; i < (year + 100); i += period) {
-            if (i > (year - 200))
+            if (i > (year - 200)) {
                 System.out.println(i);
+            }
         }
         System.out.println();
     }
